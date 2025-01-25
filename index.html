@@ -56,7 +56,8 @@
           <div class="hero_text_box">
             <div class="hero_left">
               <h1 class="hero_title">
-                <span class="outline-text">Get an</span> <br />Intervention
+                <span class="outline_text_white">Get an</span>
+                <br />Intervention
               </h1>
 
               <p class="hero_description">
@@ -125,26 +126,26 @@
       </div>
     </div>
 
-    <section class="image_grid_box">
-      <div class="container">
-        <div class="image_grid">
-          <img class="" src="./assets/image_1.png" alt="Image 1" />
-          <img src="./assets/image_2.png" alt="Image 2" />
-          <img src="./assets/image_3.png" alt="Image 3" />
+    <section class="our_story_section">
+      <div class="image_grid_box">
+        <div class="container">
+          <div class="image_grid">
+            <img class="" src="./assets/image_1.png" alt="Image 1" />
+            <img src="./assets/image_2.png" alt="Image 2" />
+            <img src="./assets/image_3.png" alt="Image 3" />
+          </div>
         </div>
       </div>
-    </section>
 
-    <section class="our_story_section">
       <div class="container">
         <div class="title_container">
-          <h2><span class="outline-text">We</span> Understand</h2>
+          <h2><span class="outline_text_black">We</span> Understand</h2>
           <div class="shallow"></div>
         </div>
 
-        <div class="responsive_grid">
-          <div class="responsive_grid_content">
-            <p>
+        <div class="common_grid">
+          <div>
+            <p class="our_story_description">
               Older adults want to play active and meaningful roles in their
               lives, including as part of a social network, a neighborhood, and
               a community. Service providers and policymakers must consider that
@@ -170,7 +171,7 @@
               adults were eligible for inclusion.
             </p>
           </div>
-          <div class="responsive_grid_content">
+          <div>
             <p class="visible_on_tab_screen">
               Qualitative and quantitative studies published from 2005 to 2016
               examining the social needs of older adults were eligible for
@@ -187,40 +188,37 @@
             </button>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="carousel_box">
-      <div class="container">
-        <div class="carousel">
-          <img class="" src="./assets/user_testimonial_1.png" />
-
-          <div class="carousel_content">
-            <div class="carousel_content_user">
+        <div class="carousel_box">
+          <div class="carousel">
+            <div class="carousel_left_content">
               <img class="user_profile" src="./assets/user_testimonial_1.png" />
               <img class="quote_icon" src="./assets/quote.png" />
             </div>
 
-            <div class="carousel_title">
-              <h3>Abbie Harvey</h3>
-              <img src="./assets/quote.png" />
-            </div>
+            <div class="carousel_content carousel_right_content">
+              <div class="carousel_title">
+                <h3>Abbie Harvey</h3>
+                <img class="quote_icon" src="./assets/quote.png" />
+              </div>
 
-            <em>
-              I have been caring for my mom & dad off and on for about 10 years
-              now, and I know the importance of me being there for appointments.
-              Older people need attention, love and care that they truly
-              deserve.
-            </em>
+              <em class="carousel_description">
+                I have been caring for my mom & dad off and on for about 10
+                years now, and I know the importance of me being there for
+                appointments. Older people need attention, love and care that
+                they truly deserve.
+              </em>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
     <section class="our_features_section">
       <div class="container">
         <div class="title_container">
           <h2 class="title">
-            <span class="outline-text">WE</span> CAN ORGANIZE EVERYTHING
+            <span class="outline_text_black">WE</span> CAN ORGANIZE EVERYTHING
           </h2>
           <div class="shallow"></div>
         </div>
@@ -299,7 +297,7 @@
       <div class="video_left">
         <div class="container">
           <div class="title_container">
-            <h2><span class="outline-text">WATCH</span> THE VIDEO</h2>
+            <h2><span class="outline_text_white">WATCH</span> THE VIDEO</h2>
           </div>
 
           <ul class="video_list_box">
@@ -364,3 +362,84 @@
     <script src="scripts.js"></script>
   </body>
 </html>
+<!-- 
+
+.carousel_box {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-height: 270px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  position: absolute;
+  overflow: hidden;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* width: fit-content; */
+  height: 270px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.12);
+}
+.carousel_left_content {
+  /* height: 100%; */
+}
+.carousel_left_content .quote_icon {
+  display: none;
+}
+
+.carousel_right_content {
+  background-color: var(--background-color);
+  /* min-width: 328px; */
+  min-width: 675px;
+  padding: 38px 65px;
+  color: rgba(255, 255, 255, 1);
+  height: 100%;
+}
+
+.carousel_title {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+}
+.carousel_title .quote_icon {
+  display: inline-block;
+  width: 60px;
+  height: 47px;
+}
+.carousel_description {
+  margin-top: 16px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@media (max-width: 1024px) {
+  .carousel_left_content .user_profile {
+    width: 180px;
+    height: 180px;
+  }
+
+  .carousel_right_content {
+    padding: 16px 32px;
+  }
+
+  .carousel_right_content .quote_icon {
+    display: inline-block;
+    width: 40px;
+    height: 31px;
+  }
+  .carousel_description {
+    font-size: 1.4rem;
+    line-height: 24px;
+  }
+}
+
+
+-->
